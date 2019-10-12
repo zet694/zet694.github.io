@@ -1,0 +1,27 @@
+title:              zet694 Blog
+email:              zzeett694@gmail.com
+description:        A Blog about IT technology
+author:             Vrublevskit Vitaliy
+baseurl:            ""
+url:                "https://zet694.github.io"
+
+# Social Profiles
+twitter_username:   zet694
+github_username:    zet694
+facebook_username:  zet694
+linkedin_username:
+
+# Add your google-analytics ID here to activate google analytics
+google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+
+# Build settings
+markdown:           redcarpet
+highlighter: rouge
+paginate:           5
+paginate_path:      "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
