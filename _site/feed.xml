@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-12T23:36:14+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">zet694 Blog</title><subtitle>A Blog about IT technology</subtitle><author><name>Vrublevskit Vitaliy</name></author><entry><title type="html">Kubernetes</title><link href="http://localhost:4000/2019/10/11/Kubernetes.html" rel="alternate" type="text/html" title="Kubernetes" /><published>2019-10-11T06:45:13+03:00</published><updated>2019-10-11T06:45:13+03:00</updated><id>http://localhost:4000/2019/10/11/Kubernetes</id><content type="html" xml:base="http://localhost:4000/2019/10/11/Kubernetes.html">&lt;h3&gt;Features&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Support Standard Markdown / CommonMark and GFM(GitHub Flavored Markdown);&lt;/li&gt;
+&lt;li&gt;Full-featured: Real-time Preview, Image (cross-domain) upload, Preformatted text/Code blocks/Tables insert, Code fold, Search replace, Read only, Themes, Multi-languages, L18n, HTML entities, Code syntax highlighting...;&lt;/li&gt;
+&lt;li&gt;Markdown Extras : Support ToC (Table of Contents), Emoji, Task lists, @Links...;&lt;/li&gt;
+&lt;li&gt;Compatible with all major browsers (IE8+), compatible Zepto.js and iPad;&lt;/li&gt;
+&lt;li&gt;Support identification, interpretation, fliter of the HTML tags;&lt;/li&gt;
+&lt;li&gt;Support TeX (LaTeX expressions, Based on KaTeX), Flowchart and Sequence Diagram of Markdown extended syntax;&lt;/li&gt;
+&lt;li&gt;Support AMD/CMD (Require.js &amp;amp; Sea.js) Module Loader, and Custom/define editor plugins;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;Editor.md&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img.shields.io/github/stars/pandao/editor.md.svg&quot; alt=&quot;&quot;&gt; &lt;img src=&quot;https://img.shields.io/github/forks/pandao/editor.md.svg&quot; alt=&quot;&quot;&gt; &lt;img src=&quot;https://img.shields.io/github/tag/pandao/editor.md.svg&quot; alt=&quot;&quot;&gt; &lt;img src=&quot;https://img.shields.io/github/release/pandao/editor.md.svg&quot; alt=&quot;&quot;&gt; &lt;img src=&quot;https://img.shields.io/github/issues/pandao/editor.md.svg&quot; alt=&quot;&quot;&gt; &lt;img src=&quot;https://img.shields.io/bower/v/editor.md.svg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;[TOCM]&lt;/p&gt;
+
+&lt;p&gt;[TOC]&lt;/p&gt;
+
+&lt;h1&gt;H1 header&lt;/h1&gt;
+
+&lt;h2&gt;H2 header&lt;/h2&gt;
+
+&lt;h3&gt;H3 header&lt;/h3&gt;
+
+&lt;h4&gt;H4 header&lt;/h4&gt;
+
+&lt;h5&gt;H5 header&lt;/h5&gt;
+
+&lt;h6&gt;H6 header&lt;/h6&gt;
+
+&lt;h1&gt;Heading 1 link &lt;a href=&quot;https://github.com/pandao/editor.md&quot; title=&quot;Heading link&quot;&gt;Heading link&lt;/a&gt;&lt;/h1&gt;
+
+&lt;h2&gt;Heading 2 link &lt;a href=&quot;https://github.com/pandao/editor.md&quot; title=&quot;Heading link&quot;&gt;Heading link&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h3&gt;Heading 3 link &lt;a href=&quot;https://github.com/pandao/editor.md&quot; title=&quot;Heading link&quot;&gt;Heading link&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h4&gt;Heading 4 link &lt;a href=&quot;https://github.com/pandao/editor.md&quot; title=&quot;Heading link&quot;&gt;Heading link&lt;/a&gt; Heading link &lt;a href=&quot;https://github.com/pandao/editor.md&quot; title=&quot;Heading link&quot;&gt;Heading link&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h5&gt;Heading 5 link &lt;a href=&quot;https://github.com/pandao/editor.md&quot; title=&quot;Heading link&quot;&gt;Heading link&lt;/a&gt;&lt;/h5&gt;
+
+&lt;h6&gt;Heading 6 link &lt;a href=&quot;https://github.com/pandao/editor.md&quot; title=&quot;Heading link&quot;&gt;Heading link&lt;/a&gt;&lt;/h6&gt;
+
+&lt;h2&gt;Headers (Underline)&lt;/h2&gt;
+
+&lt;h1&gt;H1 Header (Underline)&lt;/h1&gt;
+
+&lt;h2&gt;H2 Header (Underline)&lt;/h2&gt;
+
+&lt;h3&gt;Characters&lt;/h3&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;~~Strikethrough~~ &lt;s&gt;Strikethrough (when enable html tag decode.)&lt;/s&gt;
+&lt;em&gt;Italic&lt;/em&gt;      &lt;em&gt;Italic&lt;/em&gt;
+&lt;strong&gt;Emphasis&lt;/strong&gt;  &lt;strong&gt;Emphasis&lt;/strong&gt;
+&lt;strong&gt;&lt;em&gt;Emphasis Italic&lt;/em&gt;&lt;/strong&gt; &lt;strong&gt;&lt;em&gt;Emphasis Italic&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Superscript: X&lt;sub&gt;2&lt;/sub&gt;，Subscript: O&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Abbreviation(link HTML abbr tag)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt; specification is maintained by the &lt;abbr title=&quot;World Wide Web Consortium&quot;&gt;W3C&lt;/abbr&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Blockquotes&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Blockquotes&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Paragraphs and Line Breaks&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;Blockquotes Blockquotes&amp;quot;, &lt;a href=&quot;http://localhost/&quot;&gt;Link&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Links&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://localhost/&quot;&gt;Links&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://localhost/&quot; title=&quot;link title&quot;&gt;Links with title&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;link&amp;gt;&lt;/code&gt; : &lt;a href=&quot;https://github.com&quot;&gt;https://github.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://link-url/&quot;&gt;Reference link&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;GFM a-tail link @pandao&lt;/p&gt;
+
+&lt;h3&gt;Code Blocks (multi-language) &amp;amp; highlighting&lt;/h3&gt;
+
+&lt;h4&gt;Inline code&lt;/h4&gt;
+
+&lt;p&gt;&lt;code&gt;$ npm install marked&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4&gt;Code Blocks (Indented style)&lt;/h4&gt;
+
+&lt;p&gt;Indented 4 spaces, like &lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; (Preformatted Text).&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Code Blocks (Preformatted text):&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Javascript　&lt;/h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Hello world!&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+    &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prototype&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;init&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;box.init()&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+
+        &lt;span class=&quot;na&quot;&gt;add&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+
+        &lt;span class=&quot;na&quot;&gt;remove&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+    &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prototype&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})();&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;testBox&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;testBox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;jQuery&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;jQuery&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;HTML code&lt;/h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;mate&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charest=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;utf-8&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Hello world!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Hello world!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Images&lt;/h3&gt;
+
+&lt;p&gt;Image:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://pandao.github.io/editor.md/examples/images/4.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Follow your heart.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://pandao.github.io/editor.md/examples/images/8.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;图为：厦门白城沙滩 Xiamen&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;图片加链接 (Image + Link)：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pandao.github.io/editor.md/examples/images/7.jpg&quot; title=&quot;李健首张专辑《似水流年》封面&quot;&gt;&lt;img src=&quot;https://pandao.github.io/editor.md/examples/images/7.jpg&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;图为：李健首张专辑《似水流年》封面&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr&gt;
+
+&lt;h3&gt;Lists&lt;/h3&gt;
+
+&lt;h4&gt;Unordered list (-)&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Item A&lt;/li&gt;
+&lt;li&gt;Item B&lt;/li&gt;
+&lt;li&gt;Item C&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Unordered list (*)&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Item A&lt;/li&gt;
+&lt;li&gt;Item B&lt;/li&gt;
+&lt;li&gt;Item C&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Unordered list (plus sign and nested)&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Item A&lt;/li&gt;
+&lt;li&gt;Item B
+
+&lt;ul&gt;
+&lt;li&gt;Item B 1&lt;/li&gt;
+&lt;li&gt;Item B 2&lt;/li&gt;
+&lt;li&gt;Item B 3&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Item C
+
+&lt;ul&gt;
+&lt;li&gt;Item C 1&lt;/li&gt;
+&lt;li&gt;Item C 2&lt;/li&gt;
+&lt;li&gt;Item C 3&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Ordered list&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Item A&lt;/li&gt;
+&lt;li&gt;Item B&lt;/li&gt;
+&lt;li&gt;Item C&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr&gt;
+
+&lt;h3&gt;Tables&lt;/h3&gt;
+
+&lt;p&gt;First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell &lt;/p&gt;
+
+&lt;p&gt;| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |&lt;/p&gt;
+
+&lt;p&gt;| Function name | Description                    |
+| ------------- | ------------------------------ |
+| &lt;code&gt;help()&lt;/code&gt;      | Display the help window.       |
+| &lt;code&gt;destroy()&lt;/code&gt;   | &lt;strong&gt;Destroy your computer!&lt;/strong&gt;     |&lt;/p&gt;
+
+&lt;p&gt;| Item      | Value |
+| --------- | -----:|
+| Computer  | $1600 |
+| Phone     |   $12 |
+| Pipe      |    $1 |&lt;/p&gt;
+
+&lt;p&gt;| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+| zebra stripes | are neat        |    $1 |&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h4&gt;HTML entities&lt;/h4&gt;
+
+&lt;p&gt;&amp;copy; &amp;amp;  &amp;uml; &amp;trade; &amp;iexcl; &amp;pound;
+&amp;amp; &amp;lt; &amp;gt; &amp;yen; &amp;euro; &amp;reg; &amp;plusmn; &amp;para; &amp;sect; &amp;brvbar; &amp;macr; &amp;laquo; &amp;middot; &lt;/p&gt;
+
+&lt;p&gt;X&amp;sup2; Y&amp;sup3; &amp;frac34; &amp;frac14;  &amp;times;  &amp;divide;   &amp;raquo;&lt;/p&gt;
+
+&lt;p&gt;18&amp;ordm;C  &amp;quot;  &amp;apos;&lt;/p&gt;
+
+&lt;h2&gt;Escaping for Special Characters&lt;/h2&gt;
+
+&lt;p&gt;*literal asterisks*&lt;/p&gt;
+
+&lt;h2&gt;Markdown extras&lt;/h2&gt;
+
+&lt;h3&gt;GFM task list&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;[x] GFM task list 1&lt;/li&gt;
+&lt;li&gt;[x] GFM task list 2&lt;/li&gt;
+&lt;li&gt;[ ] GFM task list 3
+
+&lt;ul&gt;
+&lt;li&gt;[ ] GFM task list 3-1&lt;/li&gt;
+&lt;li&gt;[ ] GFM task list 3-2&lt;/li&gt;
+&lt;li&gt;[ ] GFM task list 3-3&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;[ ] GFM task list 4
+
+&lt;ul&gt;
+&lt;li&gt;[ ] GFM task list 4-1&lt;/li&gt;
+&lt;li&gt;[ ] GFM task list 4-2&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Emoji mixed :smiley:&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Blockquotes :star:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4&gt;GFM task lists &amp;amp; Emoji &amp;amp; fontAwesome icon emoji &amp;amp; editormd logo emoji :editormd-logo-5x:&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;[x] :smiley: @mentions, :smiley: #refs, &lt;a href=&quot;&quot;&gt;links&lt;/a&gt;, &lt;strong&gt;formatting&lt;/strong&gt;, and &lt;del&gt;tags&lt;/del&gt; supported :editormd-logo:;&lt;/li&gt;
+&lt;li&gt;[x] list syntax required (any unordered or ordered list supported) :editormd-logo-3x:;&lt;/li&gt;
+&lt;li&gt;[x] [ ] :smiley: this is a complete item :smiley:;&lt;/li&gt;
+&lt;li&gt;[ ] []this is an incomplete item &lt;a href=&quot;#&quot;&gt;test link&lt;/a&gt; :fa-star: @pandao; &lt;/li&gt;
+&lt;li&gt;[ ] [ ]this is an incomplete item :fa-star: :fa-gear:;
+
+&lt;ul&gt;
+&lt;li&gt;[ ] :smiley: this is an incomplete item &lt;a href=&quot;#&quot;&gt;test link&lt;/a&gt; :fa-star: :fa-gear:;&lt;/li&gt;
+&lt;li&gt;[ ] :smiley: this is  :fa-star: :fa-gear: an incomplete item &lt;a href=&quot;#&quot;&gt;test link&lt;/a&gt;;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;TeX(LaTeX)&lt;/h3&gt;
+
+&lt;p&gt;$$E=mc^2$$&lt;/p&gt;
+
+&lt;p&gt;Inline $$E=mc^2$$ Inline，Inline $$E=mc^2$$ Inline。&lt;/p&gt;
+
+&lt;p&gt;$$(\sqrt{3x-1}+(1+x)^2)$$&lt;/p&gt;
+
+&lt;p&gt;$$\sin(\alpha)^{\theta}=\sum_{i=0}^{n}(x^i + \cos(f))$$&lt;/p&gt;
+
+&lt;h3&gt;FlowChart&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-flow&quot; data-lang=&quot;flow&quot;&gt;st=&amp;gt;start: Login
+op=&amp;gt;operation: Login operation
+cond=&amp;gt;condition: Successful Yes or No?
+e=&amp;gt;end: To admin
+
+st-&amp;gt;op-&amp;gt;cond
+cond(yes)-&amp;gt;e
+cond(no)-&amp;gt;op
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Sequence Diagram&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-seq&quot; data-lang=&quot;seq&quot;&gt;Andrew-&amp;gt;China: Says Hello 
+Note right of China: China thinks\nabout it 
+China--&amp;gt;Andrew: How are you? 
+Andrew-&amp;gt;&amp;gt;China: I am good thanks!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;### Features&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Support Standard Markdown / CommonMark and GFM(GitHub Flavored Markdown);&lt;/li&gt;
+&lt;li&gt;Full-featured: Real-time Preview, Image (cross-domain) upload, Preformatted text/Code blocks/Tables insert, Code fold, Search replace, Read only, Themes, Multi-languages, L18n, HTML entities, Code syntax highlighting...;&lt;/li&gt;
+&lt;li&gt;Markdown Extras : Support ToC (Table of Contents), Emoji, Task lists, @Links...;&lt;/li&gt;
+&lt;li&gt;Compatible with all major browsers (IE8+), compatible Zepto.js and iPad;&lt;/li&gt;
+&lt;li&gt;Support identification, interpretation, fliter of the HTML tags;&lt;/li&gt;
+&lt;li&gt;Support TeX (LaTeX expressions, Based on KaTeX), Flowchart and Sequence Diagram of Markdown extended syntax;&lt;/li&gt;
+&lt;li&gt;Support AMD/CMD (Require.js &amp;amp; Sea.js) Module Loader, and Custom/define editor plugins;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;Editor.md&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img.shields.io/github/stars/pandao/editor.md.svg&quot; alt=&quot;&quot;&gt; &lt;img src=&quot;https://img.shields.io/github/forks/pandao/editor.md.svg&quot; alt=&quot;&quot;&gt; &lt;img src=&quot;https://img.shields.io/github/tag/pandao/editor.md.svg&quot; alt=&quot;&quot;&gt; &lt;img src=&quot;https://img.shields.io/github/release/pandao/editor.md.svg&quot; alt=&quot;&quot;&gt; &lt;img src=&quot;https://img.shields.io/github/issues/pandao/editor.md.svg&quot; alt=&quot;&quot;&gt; &lt;img src=&quot;https://img.shields.io/bower/v/editor.md.svg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;[TOCM]&lt;/p&gt;
+
+&lt;p&gt;[TOC]&lt;/p&gt;
+
+&lt;h1&gt;H1 header&lt;/h1&gt;
+
+&lt;h2&gt;H2 header&lt;/h2&gt;
+
+&lt;h3&gt;H3 header&lt;/h3&gt;
+
+&lt;h4&gt;H4 header&lt;/h4&gt;
+
+&lt;h5&gt;H5 header&lt;/h5&gt;
+
+&lt;h6&gt;H6 header&lt;/h6&gt;
+
+&lt;h1&gt;Heading 1 link &lt;a href=&quot;https://github.com/pandao/editor.md&quot; title=&quot;Heading link&quot;&gt;Heading link&lt;/a&gt;&lt;/h1&gt;
+
+&lt;h2&gt;Heading 2 link &lt;a href=&quot;https://github.com/pandao/editor.md&quot; title=&quot;Heading link&quot;&gt;Heading link&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h3&gt;Heading 3 link &lt;a href=&quot;https://github.com/pandao/editor.md&quot; title=&quot;Heading link&quot;&gt;Heading link&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h4&gt;Heading 4 link &lt;a href=&quot;https://github.com/pandao/editor.md&quot; title=&quot;Heading link&quot;&gt;Heading link&lt;/a&gt; Heading link &lt;a href=&quot;https://github.com/pandao/editor.md&quot; title=&quot;Heading link&quot;&gt;Heading link&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h5&gt;Heading 5 link &lt;a href=&quot;https://github.com/pandao/editor.md&quot; title=&quot;Heading link&quot;&gt;Heading link&lt;/a&gt;&lt;/h5&gt;
+
+&lt;h6&gt;Heading 6 link &lt;a href=&quot;https://github.com/pandao/editor.md&quot; title=&quot;Heading link&quot;&gt;Heading link&lt;/a&gt;&lt;/h6&gt;
+
+&lt;h2&gt;Headers (Underline)&lt;/h2&gt;
+
+&lt;h1&gt;H1 Header (Underline)&lt;/h1&gt;
+
+&lt;h2&gt;H2 Header (Underline)&lt;/h2&gt;
+
+&lt;h3&gt;Characters&lt;/h3&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;~~Strikethrough~~ &lt;s&gt;Strikethrough (when enable html tag decode.)&lt;/s&gt;
+&lt;em&gt;Italic&lt;/em&gt;      &lt;em&gt;Italic&lt;/em&gt;
+&lt;strong&gt;Emphasis&lt;/strong&gt;  &lt;strong&gt;Emphasis&lt;/strong&gt;
+&lt;strong&gt;&lt;em&gt;Emphasis Italic&lt;/em&gt;&lt;/strong&gt; &lt;strong&gt;&lt;em&gt;Emphasis Italic&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Superscript: X&lt;sub&gt;2&lt;/sub&gt;，Subscript: O&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Abbreviation(link HTML abbr tag)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt; specification is maintained by the &lt;abbr title=&quot;World Wide Web Consortium&quot;&gt;W3C&lt;/abbr&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Blockquotes&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Blockquotes&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Paragraphs and Line Breaks&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;Blockquotes Blockquotes&amp;quot;, &lt;a href=&quot;http://localhost/&quot;&gt;Link&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Links&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://localhost/&quot;&gt;Links&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://localhost/&quot; title=&quot;link title&quot;&gt;Links with title&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;link&amp;gt;&lt;/code&gt; : &lt;a href=&quot;https://github.com&quot;&gt;https://github.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://link-url/&quot;&gt;Reference link&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;GFM a-tail link @pandao&lt;/p&gt;
+
+&lt;h3&gt;Code Blocks (multi-language) &amp;amp; highlighting&lt;/h3&gt;
+
+&lt;h4&gt;Inline code&lt;/h4&gt;
+
+&lt;p&gt;&lt;code&gt;$ npm install marked&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4&gt;Code Blocks (Indented style)&lt;/h4&gt;
+
+&lt;p&gt;Indented 4 spaces, like &lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; (Preformatted Text).&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Code Blocks (Preformatted text):&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Javascript　&lt;/h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Hello world!&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+    &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prototype&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;init&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;box.init()&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+
+        &lt;span class=&quot;na&quot;&gt;add&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+
+        &lt;span class=&quot;na&quot;&gt;remove&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+    &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prototype&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})();&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;testBox&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;testBox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;jQuery&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;jQuery&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;HTML code&lt;/h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;mate&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charest=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;utf-8&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Hello world!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Hello world!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Images&lt;/h3&gt;
+
+&lt;p&gt;Image:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://pandao.github.io/editor.md/examples/images/4.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Follow your heart.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://pandao.github.io/editor.md/examples/images/8.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;图为：厦门白城沙滩 Xiamen&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;图片加链接 (Image + Link)：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pandao.github.io/editor.md/examples/images/7.jpg&quot; title=&quot;李健首张专辑《似水流年》封面&quot;&gt;&lt;img src=&quot;https://pandao.github.io/editor.md/examples/images/7.jpg&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;图为：李健首张专辑《似水流年》封面&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr&gt;
+
+&lt;h3&gt;Lists&lt;/h3&gt;
+
+&lt;h4&gt;Unordered list (-)&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Item A&lt;/li&gt;
+&lt;li&gt;Item B&lt;/li&gt;
+&lt;li&gt;Item C&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Unordered list (*)&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Item A&lt;/li&gt;
+&lt;li&gt;Item B&lt;/li&gt;
+&lt;li&gt;Item C&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Unordered list (plus sign and nested)&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Item A&lt;/li&gt;
+&lt;li&gt;Item B
+
+&lt;ul&gt;
+&lt;li&gt;Item B 1&lt;/li&gt;
+&lt;li&gt;Item B 2&lt;/li&gt;
+&lt;li&gt;Item B 3&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Item C
+
+&lt;ul&gt;
+&lt;li&gt;Item C 1&lt;/li&gt;
+&lt;li&gt;Item C 2&lt;/li&gt;
+&lt;li&gt;Item C 3&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Ordered list&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Item A&lt;/li&gt;
+&lt;li&gt;Item B&lt;/li&gt;
+&lt;li&gt;Item C&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr&gt;
+
+&lt;h3&gt;Tables&lt;/h3&gt;
+
+&lt;p&gt;First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell &lt;/p&gt;
+
+&lt;p&gt;| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |&lt;/p&gt;
+
+&lt;p&gt;| Function name | Description                    |
+| ------------- | ------------------------------ |
+| &lt;code&gt;help()&lt;/code&gt;      | Display the help window.       |
+| &lt;code&gt;destroy()&lt;/code&gt;   | &lt;strong&gt;Destroy your computer!&lt;/strong&gt;     |&lt;/p&gt;
+
+&lt;p&gt;| Item      | Value |
+| --------- | -----:|
+| Computer  | $1600 |
+| Phone     |   $12 |
+| Pipe      |    $1 |&lt;/p&gt;
+
+&lt;p&gt;| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+| zebra stripes | are neat        |    $1 |&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h4&gt;HTML entities&lt;/h4&gt;
+
+&lt;p&gt;&amp;copy; &amp;amp;  &amp;uml; &amp;trade; &amp;iexcl; &amp;pound;
+&amp;amp; &amp;lt; &amp;gt; &amp;yen; &amp;euro; &amp;reg; &amp;plusmn; &amp;para; &amp;sect; &amp;brvbar; &amp;macr; &amp;laquo; &amp;middot; &lt;/p&gt;
+
+&lt;p&gt;X&amp;sup2; Y&amp;sup3; &amp;frac34; &amp;frac14;  &amp;times;  &amp;divide;   &amp;raquo;&lt;/p&gt;
+
+&lt;p&gt;18&amp;ordm;C  &amp;quot;  &amp;apos;&lt;/p&gt;
+
+&lt;h2&gt;Escaping for Special Characters&lt;/h2&gt;
+
+&lt;p&gt;*literal asterisks*&lt;/p&gt;
+
+&lt;h2&gt;Markdown extras&lt;/h2&gt;
+
+&lt;h3&gt;GFM task list&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;[x] GFM task list 1&lt;/li&gt;
+&lt;li&gt;[x] GFM task list 2&lt;/li&gt;
+&lt;li&gt;[ ] GFM task list 3
+
+&lt;ul&gt;
+&lt;li&gt;[ ] GFM task list 3-1&lt;/li&gt;
+&lt;li&gt;[ ] GFM task list 3-2&lt;/li&gt;
+&lt;li&gt;[ ] GFM task list 3-3&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;[ ] GFM task list 4
+
+&lt;ul&gt;
+&lt;li&gt;[ ] GFM task list 4-1&lt;/li&gt;
+&lt;li&gt;[ ] GFM task list 4-2&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Emoji mixed :smiley:&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Blockquotes :star:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4&gt;GFM task lists &amp;amp; Emoji &amp;amp; fontAwesome icon emoji &amp;amp; editormd logo emoji :editormd-logo-5x:&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;[x] :smiley: @mentions, :smiley: #refs, &lt;a href=&quot;&quot;&gt;links&lt;/a&gt;, &lt;strong&gt;formatting&lt;/strong&gt;, and &lt;del&gt;tags&lt;/del&gt; supported :editormd-logo:;&lt;/li&gt;
+&lt;li&gt;[x] list syntax required (any unordered or ordered list supported) :editormd-logo-3x:;&lt;/li&gt;
+&lt;li&gt;[x] [ ] :smiley: this is a complete item :smiley:;&lt;/li&gt;
+&lt;li&gt;[ ] []this is an incomplete item &lt;a href=&quot;#&quot;&gt;test link&lt;/a&gt; :fa-star: @pandao; &lt;/li&gt;
+&lt;li&gt;[ ] [ ]this is an incomplete item :fa-star: :fa-gear:;
+
+&lt;ul&gt;
+&lt;li&gt;[ ] :smiley: this is an incomplete item &lt;a href=&quot;#&quot;&gt;test link&lt;/a&gt; :fa-star: :fa-gear:;&lt;/li&gt;
+&lt;li&gt;[ ] :smiley: this is  :fa-star: :fa-gear: an incomplete item &lt;a href=&quot;#&quot;&gt;test link&lt;/a&gt;;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;TeX(LaTeX)&lt;/h3&gt;
+
+&lt;p&gt;$$E=mc^2$$&lt;/p&gt;
+
+&lt;p&gt;Inline $$E=mc^2$$ Inline，Inline $$E=mc^2$$ Inline。&lt;/p&gt;
+
+&lt;p&gt;$$(\sqrt{3x-1}+(1+x)^2)$$&lt;/p&gt;
+
+&lt;p&gt;$$\sin(\alpha)^{\theta}=\sum_{i=0}^{n}(x^i + \cos(f))$$&lt;/p&gt;
+
+&lt;h3&gt;FlowChart&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-flow&quot; data-lang=&quot;flow&quot;&gt;st=&amp;gt;start: Login
+op=&amp;gt;operation: Login operation
+cond=&amp;gt;condition: Successful Yes or No?
+e=&amp;gt;end: To admin
+
+st-&amp;gt;op-&amp;gt;cond
+cond(yes)-&amp;gt;e
+cond(no)-&amp;gt;op
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Sequence Diagram&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-seq&quot; data-lang=&quot;seq&quot;&gt;Andrew-&amp;gt;China: Says Hello 
+Note right of China: China thinks\nabout it 
+China--&amp;gt;Andrew: How are you? 
+Andrew-&amp;gt;&amp;gt;China: I am good thanks!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;End###End&lt;/h3&gt;</content><author><name>Vrublevskit Vitaliy</name></author><summary type="html">Features</summary></entry></feed>

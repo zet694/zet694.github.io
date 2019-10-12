@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Kubernetes - zet694 Blog
+    
+  </title>
+
+  <meta name="description" content="Features">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/assets/vendor/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="/assets/main.css">
+
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="canonical" href="http://localhost:4000/2019/10/11/Kubernetes.html">
+  <link rel="alternate" type="application/rss+xml" title="zet694 Blog" href="/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">zet694 Blog</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/posts">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+<header class="masthead" style="background-image: url('/img/posts/01.jpg')">
+  
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Kubernetes</h1>
+            
+            <h2 class="subheading">Text about K8S</h2>
+            
+            <span class="meta">Posted by
+              <a href="#">Vrublevskit Vitaliy</a>
+              on October 11, 2019 &middot; <span class="reading-time" title="Estimated read time">
+  
+   15 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <h3>Features</h3>
+
+<ul>
+<li>Support Standard Markdown / CommonMark and GFM(GitHub Flavored Markdown);</li>
+<li>Full-featured: Real-time Preview, Image (cross-domain) upload, Preformatted text/Code blocks/Tables insert, Code fold, Search replace, Read only, Themes, Multi-languages, L18n, HTML entities, Code syntax highlighting...;</li>
+<li>Markdown Extras : Support ToC (Table of Contents), Emoji, Task lists, @Links...;</li>
+<li>Compatible with all major browsers (IE8+), compatible Zepto.js and iPad;</li>
+<li>Support identification, interpretation, fliter of the HTML tags;</li>
+<li>Support TeX (LaTeX expressions, Based on KaTeX), Flowchart and Sequence Diagram of Markdown extended syntax;</li>
+<li>Support AMD/CMD (Require.js &amp; Sea.js) Module Loader, and Custom/define editor plugins;</li>
+</ul>
+
+<h1>Editor.md</h1>
+
+<p><img src="https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png" alt=""></p>
+
+<p><img src="https://img.shields.io/github/stars/pandao/editor.md.svg" alt=""> <img src="https://img.shields.io/github/forks/pandao/editor.md.svg" alt=""> <img src="https://img.shields.io/github/tag/pandao/editor.md.svg" alt=""> <img src="https://img.shields.io/github/release/pandao/editor.md.svg" alt=""> <img src="https://img.shields.io/github/issues/pandao/editor.md.svg" alt=""> <img src="https://img.shields.io/bower/v/editor.md.svg" alt=""></p>
+
+<p><strong>Table of Contents</strong></p>
+
+<p>[TOCM]</p>
+
+<p>[TOC]</p>
+
+<h1>H1 header</h1>
+
+<h2>H2 header</h2>
+
+<h3>H3 header</h3>
+
+<h4>H4 header</h4>
+
+<h5>H5 header</h5>
+
+<h6>H6 header</h6>
+
+<h1>Heading 1 link <a href="https://github.com/pandao/editor.md" title="Heading link">Heading link</a></h1>
+
+<h2>Heading 2 link <a href="https://github.com/pandao/editor.md" title="Heading link">Heading link</a></h2>
+
+<h3>Heading 3 link <a href="https://github.com/pandao/editor.md" title="Heading link">Heading link</a></h3>
+
+<h4>Heading 4 link <a href="https://github.com/pandao/editor.md" title="Heading link">Heading link</a> Heading link <a href="https://github.com/pandao/editor.md" title="Heading link">Heading link</a></h4>
+
+<h5>Heading 5 link <a href="https://github.com/pandao/editor.md" title="Heading link">Heading link</a></h5>
+
+<h6>Heading 6 link <a href="https://github.com/pandao/editor.md" title="Heading link">Heading link</a></h6>
+
+<h2>Headers (Underline)</h2>
+
+<h1>H1 Header (Underline)</h1>
+
+<h2>H2 Header (Underline)</h2>
+
+<h3>Characters</h3>
+
+<hr>
+
+<p>~~Strikethrough~~ <s>Strikethrough (when enable html tag decode.)</s>
+<em>Italic</em>      <em>Italic</em>
+<strong>Emphasis</strong>  <strong>Emphasis</strong>
+<strong><em>Emphasis Italic</em></strong> <strong><em>Emphasis Italic</em></strong></p>
+
+<p>Superscript: X<sub>2</sub>，Subscript: O<sup>2</sup></p>
+
+<p><strong>Abbreviation(link HTML abbr tag)</strong></p>
+
+<p>The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.</p>
+
+<h3>Blockquotes</h3>
+
+<blockquote>
+<p>Blockquotes</p>
+</blockquote>
+
+<p>Paragraphs and Line Breaks</p>
+
+<blockquote>
+<p>&quot;Blockquotes Blockquotes&quot;, <a href="http://localhost/">Link</a>。</p>
+</blockquote>
+
+<h3>Links</h3>
+
+<p><a href="http://localhost/">Links</a></p>
+
+<p><a href="http://localhost/" title="link title">Links with title</a></p>
+
+<p><code>&lt;link&gt;</code> : <a href="https://github.com">https://github.com</a></p>
+
+<p><a href="http://link-url/">Reference link</a> </p>
+
+<p>GFM a-tail link @pandao</p>
+
+<h3>Code Blocks (multi-language) &amp; highlighting</h3>
+
+<h4>Inline code</h4>
+
+<p><code>$ npm install marked</code></p>
+
+<h4>Code Blocks (Indented style)</h4>
+
+<p>Indented 4 spaces, like <code>&lt;pre&gt;</code> (Preformatted Text).</p>
+<div class="highlight"><pre><code class="language-" data-lang=""><span class="cp">&lt;?php</span>
+    <span class="k">echo</span> <span class="s2">"Hello world!"</span><span class="p">;</span>
+<span class="cp">?&gt;</span>
+</code></pre></div>
+<p>Code Blocks (Preformatted text):</p>
+<div class="highlight"><pre><code class="language-" data-lang="">| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+</code></pre></div>
+<h4>Javascript　</h4>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">test</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Hello world!</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">box</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="nx">box</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">init</span><span class="p">();</span>
+    <span class="p">};</span>
+
+    <span class="nx">box</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="nx">box</span><span class="p">.</span><span class="nx">fn</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="na">init</span> <span class="p">:</span> <span class="kd">function</span><span class="p">(){</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">box.init()</span><span class="dl">'</span><span class="p">);</span>
+
+            <span class="k">return</span> <span class="k">this</span><span class="p">;</span>
+        <span class="p">},</span>
+
+        <span class="na">add</span> <span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">str</span><span class="p">){</span>
+            <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">add</span><span class="dl">"</span><span class="p">,</span> <span class="nx">str</span><span class="p">);</span>
+
+            <span class="k">return</span> <span class="k">this</span><span class="p">;</span>
+        <span class="p">},</span>
+
+        <span class="na">remove</span> <span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">str</span><span class="p">){</span>
+            <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">remove</span><span class="dl">"</span><span class="p">,</span> <span class="nx">str</span><span class="p">);</span>
+
+            <span class="k">return</span> <span class="k">this</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">};</span>
+
+    <span class="nx">box</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">init</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="nx">box</span><span class="p">.</span><span class="nx">fn</span><span class="p">;</span>
+
+    <span class="nb">window</span><span class="p">.</span><span class="nx">box</span> <span class="o">=</span><span class="nx">box</span><span class="p">;</span>
+<span class="p">})();</span>
+
+<span class="kd">var</span> <span class="nx">testBox</span> <span class="o">=</span> <span class="nx">box</span><span class="p">();</span>
+<span class="nx">testBox</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="dl">"</span><span class="s2">jQuery</span><span class="dl">"</span><span class="p">).</span><span class="nx">remove</span><span class="p">(</span><span class="dl">"</span><span class="s2">jQuery</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div>
+<h4>HTML code</h4>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;mate</span> <span class="na">charest=</span><span class="s">"utf-8"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;title&gt;</span>Hello world!<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Hello world!<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+<h3>Images</h3>
+
+<p>Image:</p>
+
+<p><img src="https://pandao.github.io/editor.md/examples/images/4.jpg" alt=""></p>
+
+<blockquote>
+<p>Follow your heart.</p>
+</blockquote>
+
+<p><img src="https://pandao.github.io/editor.md/examples/images/8.jpg" alt=""></p>
+
+<blockquote>
+<p>图为：厦门白城沙滩 Xiamen</p>
+</blockquote>
+
+<p>图片加链接 (Image + Link)：</p>
+
+<p><a href="https://pandao.github.io/editor.md/examples/images/7.jpg" title="李健首张专辑《似水流年》封面"><img src="https://pandao.github.io/editor.md/examples/images/7.jpg" alt=""></a></p>
+
+<blockquote>
+<p>图为：李健首张专辑《似水流年》封面</p>
+</blockquote>
+
+<hr>
+
+<h3>Lists</h3>
+
+<h4>Unordered list (-)</h4>
+
+<ul>
+<li>Item A</li>
+<li>Item B</li>
+<li>Item C</li>
+</ul>
+
+<h4>Unordered list (*)</h4>
+
+<ul>
+<li>Item A</li>
+<li>Item B</li>
+<li>Item C</li>
+</ul>
+
+<h4>Unordered list (plus sign and nested)</h4>
+
+<ul>
+<li>Item A</li>
+<li>Item B
+
+<ul>
+<li>Item B 1</li>
+<li>Item B 2</li>
+<li>Item B 3</li>
+</ul></li>
+<li>Item C
+
+<ul>
+<li>Item C 1</li>
+<li>Item C 2</li>
+<li>Item C 3</li>
+</ul></li>
+</ul>
+
+<h4>Ordered list</h4>
+
+<ol>
+<li>Item A</li>
+<li>Item B</li>
+<li>Item C</li>
+</ol>
+
+<hr>
+
+<h3>Tables</h3>
+
+<p>First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell </p>
+
+<p>| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |</p>
+
+<p>| Function name | Description                    |
+| ------------- | ------------------------------ |
+| <code>help()</code>      | Display the help window.       |
+| <code>destroy()</code>   | <strong>Destroy your computer!</strong>     |</p>
+
+<p>| Item      | Value |
+| --------- | -----:|
+| Computer  | $1600 |
+| Phone     |   $12 |
+| Pipe      |    $1 |</p>
+
+<p>| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+| zebra stripes | are neat        |    $1 |</p>
+
+<hr>
+
+<h4>HTML entities</h4>
+
+<p>&copy; &amp;  &uml; &trade; &iexcl; &pound;
+&amp; &lt; &gt; &yen; &euro; &reg; &plusmn; &para; &sect; &brvbar; &macr; &laquo; &middot; </p>
+
+<p>X&sup2; Y&sup3; &frac34; &frac14;  &times;  &divide;   &raquo;</p>
+
+<p>18&ordm;C  &quot;  &apos;</p>
+
+<h2>Escaping for Special Characters</h2>
+
+<p>*literal asterisks*</p>
+
+<h2>Markdown extras</h2>
+
+<h3>GFM task list</h3>
+
+<ul>
+<li>[x] GFM task list 1</li>
+<li>[x] GFM task list 2</li>
+<li>[ ] GFM task list 3
+
+<ul>
+<li>[ ] GFM task list 3-1</li>
+<li>[ ] GFM task list 3-2</li>
+<li>[ ] GFM task list 3-3</li>
+</ul></li>
+<li>[ ] GFM task list 4
+
+<ul>
+<li>[ ] GFM task list 4-1</li>
+<li>[ ] GFM task list 4-2</li>
+</ul></li>
+</ul>
+
+<h3>Emoji mixed :smiley:</h3>
+
+<blockquote>
+<p>Blockquotes :star:</p>
+</blockquote>
+
+<h4>GFM task lists &amp; Emoji &amp; fontAwesome icon emoji &amp; editormd logo emoji :editormd-logo-5x:</h4>
+
+<ul>
+<li>[x] :smiley: @mentions, :smiley: #refs, <a href="">links</a>, <strong>formatting</strong>, and <del>tags</del> supported :editormd-logo:;</li>
+<li>[x] list syntax required (any unordered or ordered list supported) :editormd-logo-3x:;</li>
+<li>[x] [ ] :smiley: this is a complete item :smiley:;</li>
+<li>[ ] []this is an incomplete item <a href="#">test link</a> :fa-star: @pandao; </li>
+<li>[ ] [ ]this is an incomplete item :fa-star: :fa-gear:;
+
+<ul>
+<li>[ ] :smiley: this is an incomplete item <a href="#">test link</a> :fa-star: :fa-gear:;</li>
+<li>[ ] :smiley: this is  :fa-star: :fa-gear: an incomplete item <a href="#">test link</a>;</li>
+</ul></li>
+</ul>
+
+<h3>TeX(LaTeX)</h3>
+
+<p>$$E=mc^2$$</p>
+
+<p>Inline $$E=mc^2$$ Inline，Inline $$E=mc^2$$ Inline。</p>
+
+<p>$$(\sqrt{3x-1}+(1+x)^2)$$</p>
+
+<p>$$\sin(\alpha)^{\theta}=\sum_{i=0}^{n}(x^i + \cos(f))$$</p>
+
+<h3>FlowChart</h3>
+<div class="highlight"><pre><code class="language-flow" data-lang="flow">st=&gt;start: Login
+op=&gt;operation: Login operation
+cond=&gt;condition: Successful Yes or No?
+e=&gt;end: To admin
+
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+</code></pre></div>
+<h3>Sequence Diagram</h3>
+<div class="highlight"><pre><code class="language-seq" data-lang="seq">Andrew-&gt;China: Says Hello 
+Note right of China: China thinks\nabout it 
+China--&gt;Andrew: How are you? 
+Andrew-&gt;&gt;China: I am good thanks!
+</code></pre></div>
+<h3>### Features</h3>
+
+<ul>
+<li>Support Standard Markdown / CommonMark and GFM(GitHub Flavored Markdown);</li>
+<li>Full-featured: Real-time Preview, Image (cross-domain) upload, Preformatted text/Code blocks/Tables insert, Code fold, Search replace, Read only, Themes, Multi-languages, L18n, HTML entities, Code syntax highlighting...;</li>
+<li>Markdown Extras : Support ToC (Table of Contents), Emoji, Task lists, @Links...;</li>
+<li>Compatible with all major browsers (IE8+), compatible Zepto.js and iPad;</li>
+<li>Support identification, interpretation, fliter of the HTML tags;</li>
+<li>Support TeX (LaTeX expressions, Based on KaTeX), Flowchart and Sequence Diagram of Markdown extended syntax;</li>
+<li>Support AMD/CMD (Require.js &amp; Sea.js) Module Loader, and Custom/define editor plugins;</li>
+</ul>
+
+<h1>Editor.md</h1>
+
+<p><img src="https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png" alt=""></p>
+
+<p><img src="https://img.shields.io/github/stars/pandao/editor.md.svg" alt=""> <img src="https://img.shields.io/github/forks/pandao/editor.md.svg" alt=""> <img src="https://img.shields.io/github/tag/pandao/editor.md.svg" alt=""> <img src="https://img.shields.io/github/release/pandao/editor.md.svg" alt=""> <img src="https://img.shields.io/github/issues/pandao/editor.md.svg" alt=""> <img src="https://img.shields.io/bower/v/editor.md.svg" alt=""></p>
+
+<p><strong>Table of Contents</strong></p>
+
+<p>[TOCM]</p>
+
+<p>[TOC]</p>
+
+<h1>H1 header</h1>
+
+<h2>H2 header</h2>
+
+<h3>H3 header</h3>
+
+<h4>H4 header</h4>
+
+<h5>H5 header</h5>
+
+<h6>H6 header</h6>
+
+<h1>Heading 1 link <a href="https://github.com/pandao/editor.md" title="Heading link">Heading link</a></h1>
+
+<h2>Heading 2 link <a href="https://github.com/pandao/editor.md" title="Heading link">Heading link</a></h2>
+
+<h3>Heading 3 link <a href="https://github.com/pandao/editor.md" title="Heading link">Heading link</a></h3>
+
+<h4>Heading 4 link <a href="https://github.com/pandao/editor.md" title="Heading link">Heading link</a> Heading link <a href="https://github.com/pandao/editor.md" title="Heading link">Heading link</a></h4>
+
+<h5>Heading 5 link <a href="https://github.com/pandao/editor.md" title="Heading link">Heading link</a></h5>
+
+<h6>Heading 6 link <a href="https://github.com/pandao/editor.md" title="Heading link">Heading link</a></h6>
+
+<h2>Headers (Underline)</h2>
+
+<h1>H1 Header (Underline)</h1>
+
+<h2>H2 Header (Underline)</h2>
+
+<h3>Characters</h3>
+
+<hr>
+
+<p>~~Strikethrough~~ <s>Strikethrough (when enable html tag decode.)</s>
+<em>Italic</em>      <em>Italic</em>
+<strong>Emphasis</strong>  <strong>Emphasis</strong>
+<strong><em>Emphasis Italic</em></strong> <strong><em>Emphasis Italic</em></strong></p>
+
+<p>Superscript: X<sub>2</sub>，Subscript: O<sup>2</sup></p>
+
+<p><strong>Abbreviation(link HTML abbr tag)</strong></p>
+
+<p>The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.</p>
+
+<h3>Blockquotes</h3>
+
+<blockquote>
+<p>Blockquotes</p>
+</blockquote>
+
+<p>Paragraphs and Line Breaks</p>
+
+<blockquote>
+<p>&quot;Blockquotes Blockquotes&quot;, <a href="http://localhost/">Link</a>。</p>
+</blockquote>
+
+<h3>Links</h3>
+
+<p><a href="http://localhost/">Links</a></p>
+
+<p><a href="http://localhost/" title="link title">Links with title</a></p>
+
+<p><code>&lt;link&gt;</code> : <a href="https://github.com">https://github.com</a></p>
+
+<p><a href="http://link-url/">Reference link</a> </p>
+
+<p>GFM a-tail link @pandao</p>
+
+<h3>Code Blocks (multi-language) &amp; highlighting</h3>
+
+<h4>Inline code</h4>
+
+<p><code>$ npm install marked</code></p>
+
+<h4>Code Blocks (Indented style)</h4>
+
+<p>Indented 4 spaces, like <code>&lt;pre&gt;</code> (Preformatted Text).</p>
+<div class="highlight"><pre><code class="language-" data-lang=""><span class="cp">&lt;?php</span>
+    <span class="k">echo</span> <span class="s2">"Hello world!"</span><span class="p">;</span>
+<span class="cp">?&gt;</span>
+</code></pre></div>
+<p>Code Blocks (Preformatted text):</p>
+<div class="highlight"><pre><code class="language-" data-lang="">| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+</code></pre></div>
+<h4>Javascript　</h4>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">test</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Hello world!</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">box</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="nx">box</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">init</span><span class="p">();</span>
+    <span class="p">};</span>
+
+    <span class="nx">box</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="nx">box</span><span class="p">.</span><span class="nx">fn</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="na">init</span> <span class="p">:</span> <span class="kd">function</span><span class="p">(){</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">box.init()</span><span class="dl">'</span><span class="p">);</span>
+
+            <span class="k">return</span> <span class="k">this</span><span class="p">;</span>
+        <span class="p">},</span>
+
+        <span class="na">add</span> <span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">str</span><span class="p">){</span>
+            <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">add</span><span class="dl">"</span><span class="p">,</span> <span class="nx">str</span><span class="p">);</span>
+
+            <span class="k">return</span> <span class="k">this</span><span class="p">;</span>
+        <span class="p">},</span>
+
+        <span class="na">remove</span> <span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">str</span><span class="p">){</span>
+            <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">remove</span><span class="dl">"</span><span class="p">,</span> <span class="nx">str</span><span class="p">);</span>
+
+            <span class="k">return</span> <span class="k">this</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">};</span>
+
+    <span class="nx">box</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">init</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="nx">box</span><span class="p">.</span><span class="nx">fn</span><span class="p">;</span>
+
+    <span class="nb">window</span><span class="p">.</span><span class="nx">box</span> <span class="o">=</span><span class="nx">box</span><span class="p">;</span>
+<span class="p">})();</span>
+
+<span class="kd">var</span> <span class="nx">testBox</span> <span class="o">=</span> <span class="nx">box</span><span class="p">();</span>
+<span class="nx">testBox</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="dl">"</span><span class="s2">jQuery</span><span class="dl">"</span><span class="p">).</span><span class="nx">remove</span><span class="p">(</span><span class="dl">"</span><span class="s2">jQuery</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div>
+<h4>HTML code</h4>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;mate</span> <span class="na">charest=</span><span class="s">"utf-8"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;title&gt;</span>Hello world!<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Hello world!<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+<h3>Images</h3>
+
+<p>Image:</p>
+
+<p><img src="https://pandao.github.io/editor.md/examples/images/4.jpg" alt=""></p>
+
+<blockquote>
+<p>Follow your heart.</p>
+</blockquote>
+
+<p><img src="https://pandao.github.io/editor.md/examples/images/8.jpg" alt=""></p>
+
+<blockquote>
+<p>图为：厦门白城沙滩 Xiamen</p>
+</blockquote>
+
+<p>图片加链接 (Image + Link)：</p>
+
+<p><a href="https://pandao.github.io/editor.md/examples/images/7.jpg" title="李健首张专辑《似水流年》封面"><img src="https://pandao.github.io/editor.md/examples/images/7.jpg" alt=""></a></p>
+
+<blockquote>
+<p>图为：李健首张专辑《似水流年》封面</p>
+</blockquote>
+
+<hr>
+
+<h3>Lists</h3>
+
+<h4>Unordered list (-)</h4>
+
+<ul>
+<li>Item A</li>
+<li>Item B</li>
+<li>Item C</li>
+</ul>
+
+<h4>Unordered list (*)</h4>
+
+<ul>
+<li>Item A</li>
+<li>Item B</li>
+<li>Item C</li>
+</ul>
+
+<h4>Unordered list (plus sign and nested)</h4>
+
+<ul>
+<li>Item A</li>
+<li>Item B
+
+<ul>
+<li>Item B 1</li>
+<li>Item B 2</li>
+<li>Item B 3</li>
+</ul></li>
+<li>Item C
+
+<ul>
+<li>Item C 1</li>
+<li>Item C 2</li>
+<li>Item C 3</li>
+</ul></li>
+</ul>
+
+<h4>Ordered list</h4>
+
+<ol>
+<li>Item A</li>
+<li>Item B</li>
+<li>Item C</li>
+</ol>
+
+<hr>
+
+<h3>Tables</h3>
+
+<p>First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell </p>
+
+<p>| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |</p>
+
+<p>| Function name | Description                    |
+| ------------- | ------------------------------ |
+| <code>help()</code>      | Display the help window.       |
+| <code>destroy()</code>   | <strong>Destroy your computer!</strong>     |</p>
+
+<p>| Item      | Value |
+| --------- | -----:|
+| Computer  | $1600 |
+| Phone     |   $12 |
+| Pipe      |    $1 |</p>
+
+<p>| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+| zebra stripes | are neat        |    $1 |</p>
+
+<hr>
+
+<h4>HTML entities</h4>
+
+<p>&copy; &amp;  &uml; &trade; &iexcl; &pound;
+&amp; &lt; &gt; &yen; &euro; &reg; &plusmn; &para; &sect; &brvbar; &macr; &laquo; &middot; </p>
+
+<p>X&sup2; Y&sup3; &frac34; &frac14;  &times;  &divide;   &raquo;</p>
+
+<p>18&ordm;C  &quot;  &apos;</p>
+
+<h2>Escaping for Special Characters</h2>
+
+<p>*literal asterisks*</p>
+
+<h2>Markdown extras</h2>
+
+<h3>GFM task list</h3>
+
+<ul>
+<li>[x] GFM task list 1</li>
+<li>[x] GFM task list 2</li>
+<li>[ ] GFM task list 3
+
+<ul>
+<li>[ ] GFM task list 3-1</li>
+<li>[ ] GFM task list 3-2</li>
+<li>[ ] GFM task list 3-3</li>
+</ul></li>
+<li>[ ] GFM task list 4
+
+<ul>
+<li>[ ] GFM task list 4-1</li>
+<li>[ ] GFM task list 4-2</li>
+</ul></li>
+</ul>
+
+<h3>Emoji mixed :smiley:</h3>
+
+<blockquote>
+<p>Blockquotes :star:</p>
+</blockquote>
+
+<h4>GFM task lists &amp; Emoji &amp; fontAwesome icon emoji &amp; editormd logo emoji :editormd-logo-5x:</h4>
+
+<ul>
+<li>[x] :smiley: @mentions, :smiley: #refs, <a href="">links</a>, <strong>formatting</strong>, and <del>tags</del> supported :editormd-logo:;</li>
+<li>[x] list syntax required (any unordered or ordered list supported) :editormd-logo-3x:;</li>
+<li>[x] [ ] :smiley: this is a complete item :smiley:;</li>
+<li>[ ] []this is an incomplete item <a href="#">test link</a> :fa-star: @pandao; </li>
+<li>[ ] [ ]this is an incomplete item :fa-star: :fa-gear:;
+
+<ul>
+<li>[ ] :smiley: this is an incomplete item <a href="#">test link</a> :fa-star: :fa-gear:;</li>
+<li>[ ] :smiley: this is  :fa-star: :fa-gear: an incomplete item <a href="#">test link</a>;</li>
+</ul></li>
+</ul>
+
+<h3>TeX(LaTeX)</h3>
+
+<p>$$E=mc^2$$</p>
+
+<p>Inline $$E=mc^2$$ Inline，Inline $$E=mc^2$$ Inline。</p>
+
+<p>$$(\sqrt{3x-1}+(1+x)^2)$$</p>
+
+<p>$$\sin(\alpha)^{\theta}=\sum_{i=0}^{n}(x^i + \cos(f))$$</p>
+
+<h3>FlowChart</h3>
+<div class="highlight"><pre><code class="language-flow" data-lang="flow">st=&gt;start: Login
+op=&gt;operation: Login operation
+cond=&gt;condition: Successful Yes or No?
+e=&gt;end: To admin
+
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+</code></pre></div>
+<h3>Sequence Diagram</h3>
+<div class="highlight"><pre><code class="language-seq" data-lang="seq">Andrew-&gt;China: Says Hello 
+Note right of China: China thinks\nabout it 
+China--&gt;Andrew: How are you? 
+Andrew-&gt;&gt;China: I am good thanks!
+</code></pre></div>
+<h3>End###End</h3>
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:zzeett694@gmail.com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/zet694">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/zet694">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/zet694">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; Vrublevskit Vitaliy 2019</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXXX-X');
+</script>
+
+
+
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="zet694 Blog" />
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Kubernetes | zet694 Blog</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="Kubernetes" />
+<meta name="author" content="Vrublevskit Vitaliy" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Features" />
+<meta property="og:description" content="Features" />
+<link rel="canonical" href="http://localhost:4000/2019/10/11/Kubernetes.html" />
+<meta property="og:url" content="http://localhost:4000/2019/10/11/Kubernetes.html" />
+<meta property="og:site_name" content="zet694 Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-10-11T06:45:13+03:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"http://localhost:4000/2019/10/11/Kubernetes.html","dateModified":"2019-10-11T06:45:13+03:00","datePublished":"2019-10-11T06:45:13+03:00","headline":"Kubernetes","author":{"@type":"Person","name":"Vrublevskit Vitaliy"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/10/11/Kubernetes.html"},"description":"Features","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</body>
+
+</html>
