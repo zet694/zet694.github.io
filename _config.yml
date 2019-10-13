@@ -12,7 +12,7 @@ facebook_username:  zet694
 linkedin_username:
 
 # Add your google-analytics ID here to activate google analytics
-google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+google_analytics:   UA-45590479-2 # out your google-analytics code
 
 # Build settings
 markdown:           kramdown
