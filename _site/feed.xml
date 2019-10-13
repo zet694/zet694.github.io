@@ -1,1 +1,195 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-13T14:25:39+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">zet694 Blog</title><subtitle>A Blog about IT technology</subtitle><author><name>Vrublevskit Vitaliy</name></author></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-13T15:19:27+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">zet694 Blog</title><subtitle>A Blog about IT technology</subtitle><author><name>Vrublevskit Vitaliy</name></author><entry><title type="html">Netdata: Мониторинг в реальном времени</title><link href="http://localhost:4000/2019/10/13/Netdata.html" rel="alternate" type="text/html" title="Netdata: Мониторинг в реальном времени" /><published>2019-10-13T13:37:00+03:00</published><updated>2019-10-13T13:37:00+03:00</updated><id>http://localhost:4000/2019/10/13/Netdata</id><content type="html" xml:base="http://localhost:4000/2019/10/13/Netdata.html">&lt;h1 id=&quot;netdata-мониторинг-в-реальном-времени&quot;&gt;Netdata: Мониторинг в реальном времени&lt;/h1&gt;
+
+&lt;h3 id=&quot;о-программе&quot;&gt;О программе&lt;/h3&gt;
+&lt;p&gt;В современном мире проблема мониторинга стоит достаточно остро, данный инструмент отличается
+своей простотой как в установке и настройке, так и визуализации. Основное направление - сборка данных 
+в реальном времени.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/netdata/netdata&quot;&gt;Netdata&lt;/a&gt; позволяет отследить в реальном времени практически все показатели системы, включая:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Состояние docker контейнеров&lt;/li&gt;
+  &lt;li&gt;Оперативная память&lt;/li&gt;
+  &lt;li&gt;Жесткий диск (Cвободное место, скорость записи, чтения и многое другое)&lt;/li&gt;
+  &lt;li&gt;Нагрузка процессора&lt;/li&gt;
+  &lt;li&gt;Операции ввода-вывода&lt;/li&gt;
+  &lt;li&gt;Сеть&lt;/li&gt;
+  &lt;li&gt;Многое другое&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Помимо этого имеется возможность расширить функциональность системы 
+с помощью &lt;a href=&quot;https://docs.netdata.cloud/collectors/plugins.d/&quot;&gt;плагинов&lt;/a&gt; наиболее популярные:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Postfix&lt;/li&gt;
+  &lt;li&gt;Squid&lt;/li&gt;
+  &lt;li&gt;PHP-FPM&lt;/li&gt;
+  &lt;li&gt;Golang orchestrator&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Так же имеется &lt;a href=&quot;https://london.my-netdata.io/default.html#;theme=slate;help=true&quot;&gt;Live Demo&lt;/a&gt; 
+версия сайта&lt;/p&gt;
+
+&lt;h3 id=&quot;установка&quot;&gt;Установка&lt;/h3&gt;
+
+&lt;p&gt;Существует несколько вариантов установки Netdata:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Локальная установка&lt;/li&gt;
+  &lt;li&gt;Поднимае Docker контейнера&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;локальная-установка&quot;&gt;Локальная установка&lt;/h5&gt;
+
+&lt;p&gt;Для начала установим зависимости&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;git zlib1g-dev uuid-dev libmnl-dev gcc make autoconf autoconf-archive autogen automake pkg-config curl
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;и&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python python-yaml python-mysqldb python-psycopg2 nodejs lm-sensors netcat
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Далее клонируем репозиторий программы:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/firehol/netdata.git &lt;span class=&quot;nt&quot;&gt;--depth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 ~/netdata
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Установка:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/netdata
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; ./netdate-installer.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Здесь мы запускаем скрипт сборки и установки Netdata, по окончанию 
+установки Netdata будет настроена и готова к работе.&lt;/p&gt;
+
+&lt;h5 id=&quot;время-хранения-метрик&quot;&gt;Время хранения метрик&lt;/h5&gt;
+&lt;p&gt;Все настройки хранятся в файле&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/etc/netdata/netdata.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;В нем имеется общий раздел (global), данный раздел содержит параметр 
+history&lt;/p&gt;
+
+&lt;p&gt;Для хранения данных в течение 3600 секунд (1 часа) требуется 15 MБ оперативной памяти;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;в течение 7200 секунд (2 часов) — 30 МБ оперативной памяти;&lt;/li&gt;
+  &lt;li&gt;в течение 14400 секунд (4 часов) — 60 МБ оперативной памяти;&lt;/li&gt;
+  &lt;li&gt;в течение 28800 секунд (8 часов) — 120 МБ оперативной памяти;&lt;/li&gt;
+  &lt;li&gt;в течение 43200 секунд (12 часов) — 180 МБ оперативной памяти;&lt;/li&gt;
+  &lt;li&gt;в течение 86400 секунд (т.е. суток) — 360 МБ оперативной памяти.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Больше информации о разделах и пунктах конфигурации можно получить из 
+[&lt;a href=&quot;https://docs.netdata.cloud/daemon/config/#configuration-guide&quot;&gt;документации на офф. сайте&lt;/a&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;включаем-дедупликацию-страниц-памяти&quot;&gt;Включаем дедупликацию страниц памяти&lt;/h6&gt;
+&lt;p&gt;В своем блоге команда разработки Netdata советует 
+выполнить ряд действий которые могут увеличить производительность netdata на 30-60%
+для этого необходимо отредактировать файл&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano /etc/rc.local
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Отредактировать нужно так:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/sh -e&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# rc.local&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# This script is executed at the end of each multiuser runlevel.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Make sure that the script will &quot;exit 0&quot; on success or any other&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# value on error.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# In order to enable or disable this script just change the execution&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# bits.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# By default this script does nothing.&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;echo &lt;/span&gt;1 &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; /sys/kernel/mm/ksm/run
+&lt;span class=&quot;nb&quot;&gt;echo &lt;/span&gt;1000 &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; /sys/kernel/mm/ksm/sleep_millisecs
+
+&lt;span class=&quot;nb&quot;&gt;exit &lt;/span&gt;0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;особенности-netdata&quot;&gt;Особенности Netdata&lt;/h2&gt;
+
+&lt;h5 id=&quot;оповещения-и-health-check&quot;&gt;Оповещения и health check&lt;/h5&gt;
+&lt;p&gt;Хотелось бы выделить наиболее важные и полезные функции, а именно 
+возможность оповещения о таких события:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Превышении любого из показателей(Оперативная память, сетевая активность и т.п.)&lt;/li&gt;
+  &lt;li&gt;Наличии ошибок в сетевых интерфейсах&lt;/li&gt;
+  &lt;li&gt;Многое другое&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Пример конфига:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;template&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;apache_last_collected_secs&lt;/span&gt;
+      &lt;span class=&quot;s&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;apache.requests&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;$now - $last_collected_t&lt;/span&gt;
+   &lt;span class=&quot;s&quot;&gt;every&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;10s&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;warn&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;$this &amp;gt; ( 5 * $update_every)&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;crit&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;$this &amp;gt; (10 * $update_every)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Думаю в разъяснении не нуждается, все предельно просто. [&lt;a href=&quot;https://docs.netdata.cloud/health/&quot;&gt;Более подробно на настройке&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;хранение-метрик&quot;&gt;Хранение метрик&lt;/h5&gt;
+
+&lt;p&gt;Помимо хранения данных в оперативной памяти, можно использовать различные базы данных для сохранения истории, доступные
+хранилища и интерфейсы:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Graphite (plaintext interface - Graphite, InfluxDB, KairosDB, Blueflood, ElasticSearch)&lt;/li&gt;
+  &lt;li&gt;Opentsdb (telnet or HTTP interfaces - used by OpenTSDB, InfluxDB, KairosDB, etc)&lt;/li&gt;
+  &lt;li&gt;JSON (Любая база поддерживающая NOSQL, например MongoDB)&lt;/li&gt;
+  &lt;li&gt;AWS Kinesis Data Streams (Метрики отправляются в JSON формате)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Внимание! Одновременно может быть активен лишь один из вышеперечисленных интерфейсов&lt;/p&gt;
+
+&lt;p&gt;С конкретными примерами настройки можно ознакомиться в &lt;a href=&quot;https://docs.netdata.cloud/backends/&quot;&gt;данном разделе&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;запуск-netdata-с-помощью-docker&quot;&gt;Запуск Netdata с помощью Docker&lt;/h5&gt;
+
+&lt;p&gt;Ранее я писал о том что можно установить Netdata не только локально, но и с помощью Docker(Что я чаще всего и использую)&lt;/p&gt;
+
+&lt;p&gt;Пример команды для запуска:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;netdata &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 19999:19999 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; /etc/passwd:/host/etc/passwd:ro &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; /etc/group:/host/etc/group:ro &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; /proc:/host/proc:ro &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; /sys:/host/sys:ro &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;--cap-add&lt;/span&gt; SYS_PTRACE &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;--security-opt&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;apparmor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unconfined &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  netdata/netdata
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Или есть вам удобнее в docker-compose&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;3'&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;netdata&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;netdata/netdata&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;hostname&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;example.com&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# set to fqdn of host&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;19999:19999&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;cap_add&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;SYS_PTRACE&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;security_opt&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;apparmor:unconfined&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;volumes&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/etc/passwd:/host/etc/passwd:ro&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/etc/group:/host/etc/group:ro&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/proc:/host/proc:ro&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/sys:/host/sys:ro&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Вот и все! Мы можем перейти по адресу &lt;a href=&quot;http://localhost:19999&quot;&gt;http://localhost:19999&lt;/a&gt; и увидеть метрики в реальном 
+времени.&lt;/p&gt;</content><author><name>Vrublevskit Vitaliy</name></author><summary type="html">Netdata: Мониторинг в реальном времени</summary></entry></feed>
