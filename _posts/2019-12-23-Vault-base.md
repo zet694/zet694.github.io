@@ -3,7 +3,7 @@ layout: post
 title: "Vault: Данные под замком"
 subtitle: "Инструмент ориентированный на безопасность и контроль данных"
 date: 2019-12-23 13:37:00 +0300
-background: '/img/posts/vault-compressor.png'
+background: '/img/posts/vault-compressor.jpg'
 ---
 # Vault: Данные под замком
 
