@@ -26,7 +26,7 @@ background: '/img/posts/redis-compressor.jpg'
 Забегая немного вперед хочется 
 сказать что `redis` содержит в своем "комплекте поставки" `redis-benchmark`, запустим тест:
  
-```shell script
+```bash
 $ redis-benchmark -t set,lpush -n 100000 -q
 SET: 74239.05 requests per second
 LPUSH: 79239.30 requests per second
@@ -76,7 +76,7 @@ Redis можно ""размазать" на кластер путем репли
 
 Получаем образ Redis: 
 
-```shell script
+```bash
 ~# docker pull redis
 ...                                                                                                                                                                                                  da01136793fa: Pull complete                                                                                                                                                                                                                  cf1486a2c0b8: Pull complete                                                                                                                                                                                                                  a44f7da98d9e: Pull complete                                                                                                                                                                                                                  c677fde73875: Pull complete                                                                                                                                                                                                                  727f8da63ac2: Pull complete                                                                                                                                                                                                                  Digest: sha256:90d44d431229683cadd75274e6fcb22c3e0396d149a8f8b7da9925021ee75c30
 Status: Downloaded newer image for redis:latest
@@ -84,7 +84,7 @@ Status: Downloaded newer image for redis:latest
 
 Запускаем Redis:
 
-```shell script
+```bash
 ~# ~# docker run --rm --name my-redis-name -d redis
 ```
 
@@ -102,7 +102,7 @@ Status: Downloaded newer image for redis:latest
 
 Проверим состояние нашего контейнера и убедимся что все работает должным образом: 
 
-```shell script
+```bash
 ~# docker ps
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
 2b01a01e4a35        redis               "docker-entrypoint.s…"   7 seconds ago       Up 5 seconds        6379/tcp            my-redis-name
@@ -111,14 +111,14 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 Если вы видите в списке `my-redis-name` значит Redis запущен и готов к работе. Далее подключаемся клиентом к нашему
 серверу Redis:
 
-```shell script
+```bash
 ~# docker exec -it my-redis-name redis-cli
 127.0.0.1:6379>
 ```
 
 Несколько команд для примера:
 
-```shell script
+```bash
 127.0.0.1:6379> set country russia
 OK
 127.0.0.1:6379> get country
@@ -135,7 +135,7 @@ OK
 Уточнения думаю тут излишни, так как команды предельно понятны и просты. После выхода из контейнера не забудьте его 
 удалить: 
 
-```shell script
+```bash
 ~# docker rm -f my-redis-name
 ```
 
