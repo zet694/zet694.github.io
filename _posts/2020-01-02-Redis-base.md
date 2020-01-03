@@ -85,7 +85,7 @@ Status: Downloaded newer image for redis:latest
 Запускаем Redis:
 
 ```bash
-~# ~# docker run --rm --name my-redis-name -d redis
+~# docker run --rm --name my-redis-name -d redis
 ```
 
 Для тех кто не знаком с Docker, немного поясню происходящие: 
