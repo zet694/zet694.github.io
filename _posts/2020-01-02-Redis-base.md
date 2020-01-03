@@ -30,7 +30,7 @@ background: '/img/posts/redis-compressor.jpg'
 $ redis-benchmark -t set,lpush -n 100000 -q
 SET: 74239.05 requests per second
 LPUSH: 79239.30 requests per second
-``` 
+```
 
 - `redis-benchmark` - Исполняемая команда 
 - `-t` - `SET,lpush` Перечень запускаемых тестов, разделенная запятыми 
@@ -78,7 +78,7 @@ Redis можно ""размазать" на кластер путем репли
 
 ```bash
 ~# docker pull redis
-...                                                                                                                                                                                                  da01136793fa: Pull complete                                                                                                                                                                                                                  cf1486a2c0b8: Pull complete                                                                                                                                                                                                                  a44f7da98d9e: Pull complete                                                                                                                                                                                                                  c677fde73875: Pull complete                                                                                                                                                                                                                  727f8da63ac2: Pull complete                                                                                                                                                                                                                  Digest: sha256:90d44d431229683cadd75274e6fcb22c3e0396d149a8f8b7da9925021ee75c30
+...
 Status: Downloaded newer image for redis:latest
 ``` 
 
